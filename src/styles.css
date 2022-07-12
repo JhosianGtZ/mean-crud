@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.custom{
+    background: #000;
+    color: #fefefe;
+    text-align: center;
+    height: 20%;
+    width: 50%;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
