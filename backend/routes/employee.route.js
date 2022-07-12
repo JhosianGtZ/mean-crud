@@ -71,7 +71,28 @@ employeeRoute.route('/update/:id').put((req, res, next) => {
 
       res.json(data)
       console.log('Data uptdated successfully');
-      
+
     }
   })
 })
+
+
+//DELETE EMPLOYEE 
+
+employeeRoute.route('/delete/:id').delete((req, res, next) => {
+  Employee.findOneAndRemove(req.params.id, (error, data) => {
+
+    if (error) {
+
+      return next(error);
+
+    } else {
+
+      res.status(200).json({
+        msg: data
+
+      })
+    }
+  })
+})
+module.exports = employeeRoute;
