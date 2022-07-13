@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { EmplyeeCreateComponent } from './components/emplyee-create/emplyee-create.component';
 import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
+import { EmployeeCreateComponent } from './components/employee-create/employee-create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmplyeeCreateComponent,
     EmployeeEditComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    EmployeeCreateComponent
   ],
   imports: [
     BrowserModule,
