@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EmplyeeCreateComponent } from './components/emplyee-create/emplyee-create.component';
 import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { EmployeeCreateComponent } from './components/employee-create/employee-create.component';
@@ -11,14 +12,16 @@ import { EmployeeCreateComponent } from './components/employee-create/employee-c
 @NgModule({
   declarations: [
     AppComponent,
-    EmplyeeCreateComponent,
     EmployeeEditComponent,
     EmployeeListComponent,
     EmployeeCreateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
