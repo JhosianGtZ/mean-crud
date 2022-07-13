@@ -12,5 +12,14 @@ import {
 })
 export class ApiService {
 
-  constructor() { }
+  baseUri: string = 'http://localhost:4000/api';
+  headers = new HttpHeaders().set('Content-Type', 'application/json');
+  
+  constructor(private http: HttpClient) { }
+
+  //Create 
+
+  createEmployee(data): Observable<any>{
+    let url = `${this.baseUri}/create`
+  }
 }
