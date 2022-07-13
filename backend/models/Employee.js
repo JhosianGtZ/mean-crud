@@ -3,7 +3,7 @@ const Schema = moongoose.Schema;
 
 //Define collection and Schema
 
-let employee = new Schema({
+let Employee = new Schema({
 
 
   name: {
